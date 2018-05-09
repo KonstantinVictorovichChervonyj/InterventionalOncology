@@ -1,0 +1,592 @@
+@font-face {
+    font-family: 'Myriad Pro - Light Cond';
+    src: url('./fonts/Myriad_Pro_Light_Condensed.ttf');
+}
+@font-face {
+    font-family: 'PT Sans';
+    src: url('./fonts/PT_Sans.ttf');
+}
+@font-face {
+    font-family: 'Ostrich Sans Rounded';
+    src: url('./fonts/Ostrich_Sans_Rounded.ttf');
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+    min-width: 320px;
+	max-width: 768px;
+	margin: 0 auto;
+}
+.header_top {
+    height: 95px;
+    background-color: #003864;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header_fix_width {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_fix_width ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.header_fix_width ul li a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 0 15px;
+    font-family: "PT Sans";
+}
+.nav_fix_width {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+nav {
+    height: 81px;
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+nav ul li a {
+    color: #003864;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "PT Sans";
+}
+nav ul li {
+    height: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 51px;
+}
+.home:hover {
+    background-color: #ffffff!important;
+}
+nav ul li:hover {
+    background-color: #4e8abe;
+}
+nav ul li:hover a {
+    color: white;
+}
+.banner {
+    background-image: url(./img/banner.png);
+    height: 637px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.banner h1 {
+    font-family: "Myriad Pro - Light Cond";
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #eaffff;
+    width: 90%;
+    margin: 0;
+}
+.banner p {
+    color: #eaffff;
+    font-family: "PT Sans";
+    font-size: 25px;
+    font-weight: 400;
+    width: 90%;
+}
+.banner img {
+    margin: 20px 0 90px 0;
+    color: #eaffff;
+    font-size: 55px;
+    cursor: pointer;
+}
+.explore {
+    background-image: url(./img/colorfill.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.explore_fix_width {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.explore_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.explore_nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+.explore_nav ul li a {
+    color: #34729e;
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.explore_nav ul li a:hover {
+    text-decoration: underline;
+}
+.active {
+    text-decoration: underline!important;
+}
+.explore_nav span {
+    color: #34729e;
+    font-family: "Ostrich Sans Rounded";
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+.explore_nav button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 192px;
+    height: 50px;
+    border: 2px solid #34729e;
+    background: white;
+    color: #34729e;
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+.explore_nav button img {
+    margin: 0 5px;
+}
+.explore_galery {
+    margin: 0 auto;
+}
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.explore_galery_item {
+    width: 300px;
+    /*height: 318px;*/
+    box-shadow: 0 0 13px 2px rgba(18, 0, 0, 0.09);
+    transform: skewY(-3deg);
+    margin: 20px 20px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.note {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+.explore_galery_item span {
+    padding: 10px;
+    background-color: #34729e;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.date {
+    transform: skewY(3deg);
+    color: #00aec6!important;
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-weight: 400;
+    padding: 30px 20px!important;
+}
+.explore_galery_item h3 {
+    transform: skewY(3deg);
+    font-family: "Myriad Pro - Light Cond";
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #34729e;
+    padding: 5px 15px 5px 20px;
+    margin: 0;
+}
+.explore_galery_item p {
+    transform: skewY(3deg);
+    color: #003865;
+    font-family: "PT Sans";
+    font-weight: 400;
+    padding: 10px 15px 50px 20px;
+    margin: 0;
+    font-size: 13px;
+}
+.icons {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 22px;
+}
+.icons .fa-share-square-o {
+    color: #34729e;
+    cursor: pointer;
+}
+.icons .fa-star-o {
+    color: #f18700;
+    cursor: pointer;
+}
+.column .explore_galery_item:nth-child(2) {
+    background-color: #13a5df;
+}
+.column .explore_galery_item:nth-child(2) h3 {
+    color: #ffffff;
+    margin-top: 25px;
+}
+.column .explore_galery_item:nth-child(2) p {
+    color: #ffffff;
+}
+.column .explore_galery_item:nth-child(2) .fa {
+    color: #ffffff;
+}
+.column .explore_galery_item:nth-child(3) {
+    background-color: #00857c;
+}
+.column .explore_galery_item:nth-child(3) h3 {
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: "Ostrich Sans Rounded";
+}
+.column .explore_galery_item:nth-child(3) p {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 5px 15px 49px 15px;
+    font-family: "PT Sans";
+}
+.column .explore_galery_item:nth-child(3) .fa {
+    color: #ffffff;
+}
+.column .explore_galery_item:nth-child(3) span {
+    background: #ffffff;
+    color: #00857c;
+}
+.column .explore_galery_item:nth-child(3) .date {
+    color: #ffffff!important;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.play {
+    position: absolute;
+    top: 95px;
+    right: 119px;
+    cursor: pointer;
+    transform: skewY(3deg);
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    transform: skewY(-3deg);
+}
+.slider h4 {
+    color: #34729e;
+    font-family: "Myriad Pro - Light Cond";
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: -390px;
+    transform: skewY(3deg);
+}
+.active_item_slider {
+    width: 349px!important;
+    height: 326px!important;
+    box-shadow: 0 0 6px rgba(15, 0, 0, 0.14)!important;
+}
+.markers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.markers span {
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 5px;
+}
+.markers ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.markers ul li {
+    width: 23px;
+    height: 24px;
+    background-color: #e6e7e8;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.markers ul li:hover {
+    background-color: #34729e;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.active_marker {
+    width: 33px!important;
+    height: 34px!important;
+    background-color: #34729e!important;
+}
+.slider_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider_item {
+    width: 278px;
+    height: 266px;
+}
+.blue {
+    background-color: #00aec6;
+}
+.dark_blue {
+    background-color: #34729e;
+}
+.purple {
+    background-color: #502b70;
+}
+.slider_item p {
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 400;
+    transform: skewY(3deg);
+    padding: 0 20px;
+}
+.slider_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.engage {
+    margin-top: 20px;
+    height: 775px;
+    background-image: url(./img/banner_bottom.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.engage h4 {
+    color: #ffffff;
+    font-family: "Myriad Pro - Light Cond";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.engage p {
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    width: 80%;
+}
+.engage button {
+    width: 263px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    cursor: pointer;
+}
+@media screen and (max-width: 655px) {
+    nav ul li:hover {
+        background-color: #4e8abe;
+        border-radius: 25px;
+    }
+}
+@media screen and (max-width: 706px) {
+    .home {
+        display: none;
+    }
+    nav {
+        height: 100%!important; 
+        display: flex;
+        align-items: center;
+    }
+    nav ul {
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li {
+        height: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        margin: 5px 0;
+    }
+    .nav_fix_width {
+        margin: 0 auto;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 532px) {
+    .header_top {
+         height: 100%; 
+    }
+    .header_fix_width {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .logo {
+        margin: 16px 0;
+    }
+    .explore_nav ul {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .explore_nav ul li {
+        margin: 5px 0;
+    }
+    .more_content h2 {
+        color: #34729e;
+        font-family: "Myriad Pro - Light Cond";
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 60px;
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .slider h4 {
+        color: #34729e;
+        font-family: "Myriad Pro - Light Cond";
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-left: 0px;
+        transform: skewY(3deg);
+    }
+    .slider_items .slider_item:nth-child(1) {
+        display: none;
+    }
+}
+@media screen and (max-width: 432px) {
+    .banner h1 {
+        font-family: "Myriad Pro - Light Cond";
+        font-size: 40px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #eaffff;
+        width: 90%;
+        margin: 0;
+    }
+    .banner p {
+        color: #eaffff;
+        font-family: "PT Sans";
+        font-size: 18px;
+        font-weight: 400;
+        width: 90%;
+    }
+    .engage h4 {
+        color: #ffffff;
+        font-family: "Myriad Pro - Light Cond";
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 60px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .engage p {
+        color: #ffffff;
+        font-family: "PT Sans";
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 357px) {
+    .active_item_slider {
+        width: 300px!important;
+        height: 266px!important;
+        box-shadow: 0 0 6px rgba(15, 0, 0, 0.14)!important;
+    }
+    .slider_item {
+        width: 250px;
+        height: 230px;
+    }
+    .markers span {
+        color: #000000;
+        font-family: "PT Sans";
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0 3px;
+    }
+    .explore_galery_item {
+        width: 300px;
+        box-shadow: 0 0 13px 2px rgba(18, 0, 0, 0.09);
+        transform: skewY(-3deg);
+        margin: 20px 10px;
+        background-color: #fff;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 323px) {
+    .header_fix_width ul li a {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 0 15px;
+        font-family: "PT Sans";
+    }
+}
